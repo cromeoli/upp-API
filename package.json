@@ -1,25 +1,29 @@
 {
   "name": "upp-backend",
-  "version": "0.1.0",
-  "description": "Backend MVC de la aplicación Upp en nodejs utilizando expressjs y arhcivos JSON como bbdd",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
   },
-  "keywords": [],
-  "author": "Christian Romero Oliva",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cromeoli/upp-backend.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/cromeoli/upp-backend/issues"
   },
   "homepage": "https://github.com/cromeoli/upp-backend#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2",
-    "node": "^19.6.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "url": "^0.11.0",
+    "uuid": "^9.0.0"
   }
 }

@@ -1,0 +1,156 @@
+{
+  "posts": {
+    "1": {
+      "titulo": "Bienvenido a mi blog",
+      "autor": "Autor 1",
+      "contenido": "Este es mi primer post en este blog, espero que les guste",
+      "upps": [
+        "2",
+        "3",
+        "4"
+      ],
+      "tipo": "texto"
+    },
+    "2": {
+      "titulo": "Mi día de hoy",
+      "autor": "Autor 2",
+      "contenido": "Hoy fue un día agotador, pero productivo",
+      "upps": [
+        "1",
+        "3"
+      ],
+      "tipo": "texto"
+    },
+    "3": {
+      "titulo": "Mis viajes",
+      "autor": "Autor 3",
+      "contenido": "He visitado muchos lugares interesantes en mi vida, aquí comparto algunos",
+      "upps": [
+        "1",
+        "2",
+        "4"
+      ],
+      "tipo": "texto"
+    },
+    "4": {
+      "titulo": "Mi mascota",
+      "autor": "Autor 4",
+      "contenido": "Tengo un perro llamado Max, es muy amigable y le encanta jugar",
+      "upps": [
+        "1",
+        "3"
+      ],
+      "tipo": "texto"
+    },
+    "5": {
+      "titulo": "Mi cocina",
+      "autor": "Autor 5",
+      "contenido": "Me encanta cocinar, aquí comparto algunas de mis recetas favoritas",
+      "upps": [
+        "6",
+        "7"
+      ],
+      "tipo": "texto"
+    },
+    "6": {
+      "titulo": "Mi jardín",
+      "autor": "Autor 6",
+      "contenido": "Tengo un jardín muy bonito, lleno de flores y árboles frutales",
+      "upps": [
+        "5",
+        "7"
+      ],
+      "tipo": "texto"
+    },
+    "7": {
+      "titulo": "Mi música",
+      "autor": "Autor 7",
+      "contenido": "Me encanta escuchar música, aquí comparto algunas de mis canciones favoritas",
+      "upps": [
+        "5",
+        "6"
+      ],
+      "tipo": "texto"
+    },
+    "8": {
+      "titulo": "Mi libro favorito",
+      "autor": "Autor 10",
+      "contenido": "Mi libro favorito es 'El alquimista' de Paulo Coelho",
+      "upps": [
+        "8",
+        "11"
+      ],
+      "tipo": "texto"
+    },
+    "9": {
+      "titulo": "Mi libro favorito",
+      "autor": "Autor 10",
+      "contenido": "Mi libro favorito es 'El alquimista' de Paulo Coelho",
+      "upps": [
+        "8",
+        "11"
+      ],
+      "tipo": "texto"
+    },
+    "10": {
+      "titulo": "Mi libro favorito",
+      "autor": "Autor 10",
+      "contenido": "Mi libro favorito es 'El alquimista' de Paulo Coelho",
+      "upps": [
+        "8",
+        "11"
+      ],
+      "tipo": "texto"
+    },
+    "11": {
+      "titulo": "Mi película favorita",
+      "autor": "Autor 11",
+      "contenido": "Mi película favorita es 'Forrest Gump'",
+      "upps": [
+        "10",
+        "12"
+      ],
+      "tipo": "texto"
+    },
+    "12": {
+      "titulo": "Mi lugar favorito",
+      "autor": "Autor 12",
+      "contenido": "Mi lugar favorito es la playa, me encanta relajarme y disfrutar del sol",
+      "upps": [
+        "11",
+        "13"
+      ],
+      "tipo": "texto"
+    },
+    "13": {
+      "titulo": "Mi comida favorita",
+      "autor": "Autor 13",
+      "contenido": "Mi comida favorita es el sushi, me encanta su sabor y variedad",
+      "upps": [
+        "12",
+        "14"
+      ],
+      "tipo": "texto"
+    },
+    "14": {
+      "titulo": "Mi paisaje favorito",
+      "autor": "Autor 14",
+      "contenido": "Mi paisaje favorito es el campo, me encanta ver las flores y los animales",
+      "upps": [
+        "13",
+        "15"
+      ],
+      "tipo": "texto"
+    },
+    "15": {
+      "titulo": "Mi ciudad favorita",
+      "autor": "Autor 15",
+      "contenido": "Mi ciudad favorita es Nueva York, me encanta su vibrante energía y diversidad",
+      "upps": [
+        "14",
+        "16"
+      ],
+      "tipo": "texto"
+    }
+  }
+}
