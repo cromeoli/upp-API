@@ -180,10 +180,10 @@ const updateOnePost = (req, res, next) => {
     // Capturamos el Id de la publicación
     const { id } = req.params;
 
-    // Capturamos los nuevos datos del cuerpo de la publicación
+    // Capturamos los nuevos datos del cuerpo de la petición
     const { body } = req;
 
-    // Llamamos al servicio para comprobar que la publicación que queremos eliminar existe
+    // Llamamos al servicio para comprobar que la publicación que queremos actualizar existe
     const exists = postsServices.getOnePost(id);
 
     if (exists) {
