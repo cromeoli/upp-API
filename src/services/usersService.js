@@ -20,12 +20,13 @@ const createUser = (userData) => {
 
     // Creamos un usuario nuevo y le añadimos los datos recibidos del controlador
     const newUser = {
+        "id":id,
         ...userData,
         fechaRegistro: new Date().toLocaleDateString()
     };
 
     // Enviamos el usuario al modelo para que éste la inserte en posts.json
-    return usersModel.insertUser(id, newUser);
+    return usersModel.insertUser(newUser);
 }
 
 //TODO updateUser

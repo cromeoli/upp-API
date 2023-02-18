@@ -1,59 +1,24 @@
 {
-  "users": {
-    "1": {
-      "username": "johndoe",
-      "email": "johndoe@example.com",
-      "passwd": "secretpasswd",
-      "circles": [
-        1,
-        2,
-        3
-      ]
+  "users": [
+    {
+      "id": "61dbae02-c147-4e28-863c-db7bd402b2d6",
+      "name": "UserPrueba",
+      "email": "prueba@prueba.com",
+      "password": "1234567890"
     },
-    "2": {
-      "username": "janedoe",
-      "email": "janedoe@example.com",
-      "passwd": "secretpasswd2",
-      "circles": [
-        1,
-        4
-      ]
+    {
+      "id": "61dbae02-c147-4e28-863c-db7bd402b2d7",
+      "name": "Christian",
+      "email": "christianReshulon6969@yahoo.es",
+      "password": "1234567890"
     },
-    "3": {
-      "username": "jimmy",
-      "email": "jimmy@example.com",
-      "passwd": "secretpasswd3",
-      "circles": [
-        3,
-        5
-      ]
-    },
-    "4": {
-      "username": "jenny",
-      "email": "jenny@example.com",
-      "passwd": "secretpasswd4",
-      "circles": [
-        2,
-        4,
-        5
-      ]
-    },
-    "5": {
-      "username": "josh",
-      "email": "josh@example.com",
-      "passwd": "secretpasswd5",
-      "circles": [
-        1,
-        3,
-        5
-      ]
-    },
-    "51413ab3-2910-46a8-bbb7-4343810fb391": {
-      "username": "Luo",
-      "email": "luo@pisluo.com",
-      "passwd": "1234",
+    {
+      "id": "ff7f1fca-142b-4b71-8165-1c4378aa1b71",
+      "username": "paco",
+      "email": "paco@jose.com",
+      "passwd": "luo",
       "circles": [],
-      "fechaRegistro": "14/2/2023"
+      "fechaRegistro": "18/2/2023"
     }
-  }
+  ]
 }

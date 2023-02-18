@@ -1,12 +1,16 @@
 const express = require("express")
 const cors = require('cors')
+const auth = require('./utils/authentication')
+const cookieParser = require('cookie-parser');
 
 const app = express()
 const routesV1 = require("./routes/v1/indexRoutes")
 
 app.use(cors());
+app.use(cookieParser());
 app.use(express.json())
-app.use("/api/v1", routesV1.router)
+
+app.use("/api/v1", routesV1.router);
 
 app.use((err, req, res, next) => {
     console.log("Error general - (index.js)")

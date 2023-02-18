@@ -1,10 +1,10 @@
 const users = require("./users.json");
 const fs = require("fs");
 
-function insertUser(id, newUser) {
+function insertUser(newUser) {
 
     // Modificamos el objeto datos
-    users.users[id] = newUser;
+    users.users.push(newUser);
 
     // Escribimos los nuevos datos en el fichero JSON
     fs.writeFileSync(
@@ -28,11 +28,21 @@ function getEmail(email) {
     return undefined;
 }
 
+function findUserCredentials(userData){
+    console.log(userData)
+
+    return users.users.find(
+        (usuario) => usuario.email === userData.email
+                     && usuario.passwd === userData.passwd
+    );
+}
+
 module.exports = {
     insertUser,
     deleteUser,
     getUsername,
-    getEmail
+    getEmail,
+    findUserCredentials
 };
 
 
