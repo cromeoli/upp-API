@@ -11,14 +11,17 @@ function authManager(req, res, next){
 
     // Si hay usuario y contraseña, los mandamos a loguearse, si no, miramos si hay token
     if(userData){
-        if(login(userData)){
+        const currentUser = login(userData)
+        console.log(currentUser)
+
+        if(!!currentUser){
             //Creamos el token con los datos del usuario
             const token = createToken(userData);
 
             // Establecer una cookie con el token JWT
             return res.cookie('auth', token, { httpOnly: true, maxAge: 259200000 })
                     .status(200)
-                    .send({mensaje:"Cookie creada con exito"})
+                    .send({mensaje:"Logueado con éxito", id:currentUser.id})
 
         }else{
 
@@ -37,16 +40,15 @@ function authManager(req, res, next){
 
 function login(userData){
     //A ver si los datos existen
-    return !!authService.checkUser(userData);
+    return authService.checkUser(userData);
 }
 
-function verifyToken(token, req){
+function verifyToken(token){
     jwt.verify(token, 'matanga', (err, user) => {
         if (err) {
             return false; // El token no es válido
         }
 
-        req.user = user; //TODO DEVOLVER ID????
         // El usuario está autenticado y se puede continuar con la solicitud
     });
 
