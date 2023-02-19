@@ -35,17 +35,6 @@
       "tipo": "texto"
     },
     {
-      "id": "5",
-      "titulo": "Mi cocina",
-      "autor": "Autor 5",
-      "contenido": "Me encanta cocinar, aquí comparto algunas de mis recetas favoritas",
-      "upps": [
-        "6",
-        "7"
-      ],
-      "tipo": "texto"
-    },
-    {
       "id": "6",
       "titulo": "Mi jardín",
       "autor": "Autor 6",

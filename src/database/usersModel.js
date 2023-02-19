@@ -1,6 +1,5 @@
 const users = require("./users.json");
 const fs = require("fs");
-const posts = require("./posts.json");
 
 function insertUser(newUser) {
 
@@ -15,6 +14,12 @@ function insertUser(newUser) {
     );
 
     return newUser;
+}
+
+function getUser(id){
+    const userData = users.users.find(
+        user => id === user.id)
+    return userData
 }
 
 function getUsername(receivedUsername) {
@@ -38,9 +43,9 @@ function findUserCredentials(receivedUserData){
     );
 }
 
-function updateUser(id, nuevosDatos){
+function updateUser(id, newData){
 
-    // Comprobamos que exista la publicación
+    // Comprobamos que exista el usuario
     const userIndex = users.users.findIndex(user => user.id === id)
 
     if (!userIndex) {
@@ -51,20 +56,20 @@ function updateUser(id, nuevosDatos){
     } else {
 
         // Cambiamos los datos
-        posts.posts[userIndex] = nuevosDatos;
+        users.users[userIndex] = newData;
 
         // Para devolver el resultado final creamos esta variable con los datos ya actualizados
-        const updatedPost = posts.posts[userIndex]
+        const updatedUser = users.users[userIndex]
 
 
         // Escribimos los nuevos datos en el fichero JSON
         fs.writeFileSync(
-            "./src/database/posts.json",
-            JSON.stringify(posts, null, 2),
+            "./src/database/users.json",
+            JSON.stringify(users, null, 2),
             "utf8"
         );
 
-        return updatedPost;
+        return updatedUser;
 
     }
 }
@@ -82,12 +87,12 @@ function deleteUser(id){
     } else {
 
         // Borramos el producto del objeto datos
-        const deletedUser = posts.posts.splice(userIndex, 1);
+        const deletedUser = users.users.splice(userIndex, 1);
 
         // Escribimos los nuevos datos en el fichero JSON
         fs.writeFileSync(
-            "./src/database/posts.json",
-            JSON.stringify(posts, null, 2),
+            "./src/database/users.json",
+            JSON.stringify(users, null, 2),
             "utf8"
         );
 
@@ -102,7 +107,9 @@ module.exports = {
     deleteUser,
     getUsername,
     getEmail,
-    findUserCredentials
+    findUserCredentials,
+    getUser,
+    updateUser
 };
 
 

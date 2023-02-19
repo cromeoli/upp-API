@@ -196,16 +196,16 @@ const updateOneUser = (req, res, next) => {
     const { body } = req;
 
     // Llamamos al servicio para comprobar que el usuario que queremos actualizar existe
-    const exists = usersServices.getEmail(id);
+    const exists = usersServices.getUser(id);
 
     if (exists) {
         // Si existe La actualizamos
-        const updatedPost = usersServices.updateUser(id, body);
+        const updatedUser = usersServices.updateUser(id, body);
 
-        if (updatedPost) {
+        if (updatedUser) {
 
             //Si se actualiza bien, enviamos un código HTTP 200 - Éxito
-            res.status(200).send({updatedPost,mensaje: "El usuario se ha modificado con éxito"});
+            res.status(200).send({updatedPost: updatedUser,mensaje: "El usuario se ha modificado con éxito"});
 
         } else {
 

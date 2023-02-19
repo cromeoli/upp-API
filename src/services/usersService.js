@@ -30,31 +30,33 @@ const createUser = (userData) => {
     return usersModel.insertUser(newUser);
 }
 
-//TODO updateUser
-
 function deleteUser(id) {
     return usersModel.deleteUser(id);
+}
+
+function getUser(id){
+    return usersModel.getUser(id)
 }
 
 const updateUser = (id,newUserData) => {
 
     // Obtiene los datos actuales del usuario
-    const postData = postModel.getOnePost(id);
+    const userData = usersModel.getUser(id);
 
     // Recorro los campos comprobando si existen en los datos
-    for (let field in postData) {
-        if (newPostData.hasOwnProperty(field)) {
+    for (let field in userData) {
+        if (newUserData.hasOwnProperty(field)) {
 
             //Si existen, los actualizo
-            postData[field] = newPostData[field];
+            userData[field] = newUserData[field];
         }
     }
 
     //Actualiza la fecha de modificación
-    postData.fechaModificacion = new Date().toLocaleDateString;
+    userData.fechaModificacion = new Date().toLocaleDateString;
 
     // Envía los datos al modelo para que éste actualice los datos
-    return postModel.updateOnePost(id, postData);
+    return usersModel.updateUser(id, userData);
 
 };
 
@@ -62,5 +64,7 @@ module.exports = {
     createUser,
     getEmail,
     getUsername,
-    deleteUser
+    deleteUser,
+    updateUser,
+    getUser
 };
