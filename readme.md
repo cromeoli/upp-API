@@ -6,7 +6,10 @@ Upp es una red social basada en el contenido, para ello podrás unirte a círcul
 
 ---
 
-## Descripción y uso de la API
+## Endpoints
+
+Nota: Para probar los endpoints he añadido el archivo "endpointTests.json" para Insomnia que puede importarse y contiene las rutas ya definidas con las que he ido haciendo pruebas.
+
 
 La API de Upp tiene los siguientes endpoints definidos:
 
