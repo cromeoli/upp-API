@@ -15,17 +15,18 @@ const getTenPosts = (pages = 1) => {
 const createOnePost = (updatedPostData) => {
 
     // Creamos un ID
-    const id = uuid();
+    const postId = uuid();
 
     // Creamos un post nuevo con los datos modificados
     const newPost = {
+        id: postId,
         ...updatedPostData,
         fechaSubida: new Date().toLocaleDateString(),
         fechaModificacion: new Date().toLocaleDateString()
     };
 
     // Enviamos la publicación al modelo para que éste la inserte en posts.json
-    return postModel.insertOnePost(id, newPost);
+    return postModel.insertOnePost(newPost);
 }
 
 /*
@@ -50,7 +51,11 @@ const deleteOnePost = (id) => {
 * */
 const updateOnePost = (id,newPostData) => {
 
-    // Obtiene el producto actual
+    if(newPostData.hasOwnProperty("id")){
+        return false
+    }
+
+    // Obtiene los datos actuales del post
     const postData = postModel.getOnePost(id);
 
     // Recorro los campos comprobando si existen en los datos

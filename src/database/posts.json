@@ -1,17 +1,7 @@
 {
-  "posts": {
-    "1": {
-      "titulo": "Bienvenido a mi blog",
-      "autor": "Autor 1",
-      "contenido": "Este es mi primer post en este blog, espero que les guste",
-      "upps": [
-        "2",
-        "3",
-        "4"
-      ],
-      "tipo": "texto"
-    },
-    "2": {
+  "posts": [
+    {
+      "id": "2",
       "titulo": "Mi día de hoy",
       "autor": "Autor 2",
       "contenido": "Hoy fue un día agotador, pero productivo",
@@ -21,7 +11,8 @@
       ],
       "tipo": "texto"
     },
-    "3": {
+    {
+      "id": "3",
       "titulo": "Mis viajes",
       "autor": "Autor 3",
       "contenido": "He visitado muchos lugares interesantes en mi vida, aquí comparto algunos",
@@ -32,7 +23,8 @@
       ],
       "tipo": "texto"
     },
-    "4": {
+    {
+      "id": "4",
       "titulo": "Mi mascota",
       "autor": "Autor 4",
       "contenido": "Tengo un perro llamado Max, es muy amigable y le encanta jugar",
@@ -42,7 +34,8 @@
       ],
       "tipo": "texto"
     },
-    "5": {
+    {
+      "id": "5",
       "titulo": "Mi cocina",
       "autor": "Autor 5",
       "contenido": "Me encanta cocinar, aquí comparto algunas de mis recetas favoritas",
@@ -52,7 +45,8 @@
       ],
       "tipo": "texto"
     },
-    "6": {
+    {
+      "id": "6",
       "titulo": "Mi jardín",
       "autor": "Autor 6",
       "contenido": "Tengo un jardín muy bonito, lleno de flores y árboles frutales",
@@ -62,7 +56,8 @@
       ],
       "tipo": "texto"
     },
-    "7": {
+    {
+      "id": "7",
       "titulo": "Mi música",
       "autor": "Autor 7",
       "contenido": "Me encanta escuchar música, aquí comparto algunas de mis canciones favoritas",
@@ -72,7 +67,8 @@
       ],
       "tipo": "texto"
     },
-    "8": {
+    {
+      "id": "8",
       "titulo": "Mi libro favorito",
       "autor": "Autor 8",
       "contenido": "Mi libro favorito es 'El alquimista' de Paulo Coelho",
@@ -82,7 +78,8 @@
       ],
       "tipo": "texto"
     },
-    "9": {
+    {
+      "id": "9",
       "titulo": "Mi libro favorito",
       "autor": "Autor 9",
       "contenido": "Mi libro favorito es 'El alquimista' de Paulo Coelho",
@@ -92,7 +89,8 @@
       ],
       "tipo": "texto"
     },
-    "10": {
+    {
+      "id": "10",
       "titulo": "Mi libro favorito",
       "autor": "Autor 10",
       "contenido": "Mi libro favorito es 'El alquimista' de Paulo Coelho",
@@ -102,7 +100,8 @@
       ],
       "tipo": "texto"
     },
-    "11": {
+    {
+      "id": "11",
       "titulo": "Mi película favorita",
       "autor": "Autor 11",
       "contenido": "Mi película favorita es 'Forrest Gump'",
@@ -112,135 +111,164 @@
       ],
       "tipo": "texto"
     },
-    "12": {
-      "titulo": "Mi lugar favorito",
-      "autor": "Autor 12",
-      "contenido": "Mi lugar favorito es la playa, me encanta relajarme y disfrutar del sol",
+    {
+      "id": "12",
+      "titulo": "Mi día de hoy",
+      "autor": "Autor 2",
+      "contenido": "Hoy fue un día agotador, pero productivo",
       "upps": [
-        "11",
-        "13"
+        "1",
+        "3"
       ],
       "tipo": "texto"
     },
-    "13": {
-      "titulo": "Mi comida favorita",
-      "autor": "Autor 13",
-      "contenido": "Mi comida favorita es el sushi, me encanta su sabor y variedad",
+    {
+      "id": "13",
+      "titulo": "Mis viajes",
+      "autor": "Autor 3",
+      "contenido": "He visitado muchos lugares interesantes en mi vida, aquí comparto algunos",
       "upps": [
-        "12",
-        "14"
+        "1",
+        "2",
+        "4"
       ],
       "tipo": "texto"
     },
-    "14": {
-      "titulo": "Mi paisaje favorito",
-      "autor": "Autor 14",
-      "contenido": "Mi paisaje favorito es el campo, me encanta ver las flores y los animales",
+    {
+      "id": "14",
+      "titulo": "Mi mascota",
+      "autor": "Autor 4",
+      "contenido": "Tengo un perro llamado Max, es muy amigable y le encanta jugar",
       "upps": [
-        "13",
-        "15"
+        "1",
+        "3"
       ],
       "tipo": "texto"
     },
-    "15": {
-      "titulo": "Mi ciudad favorita",
-      "autor": "Autor 15",
-      "contenido": "Mi ciudad favorita es Nueva York, me encanta su vibrante energía y diversidad",
+    {
+      "id": "15",
+      "titulo": "Mi cocina",
+      "autor": "Autor 5",
+      "contenido": "Me encanta cocinar, aquí comparto algunas de mis recetas favoritas",
       "upps": [
-        "14",
-        "16"
+        "6",
+        "7"
       ],
       "tipo": "texto"
     },
-    "e6c4d2da-a5d4-4a23-bc63-588075a19228": {
-      "titulo": "Mi paco pouso",
-      "autor": "1",
-      "upps": [],
-      "contenido": "ay mi pacooo",
-      "tipo": "texto",
-      "fechaSubida": "17/2/2023",
-      "fechaModificacion": "17/2/2023"
+    {
+      "id": "16",
+      "titulo": "Mi jardín",
+      "autor": "Autor 6",
+      "contenido": "Tengo un jardín muy bonito, lleno de flores y árboles frutales",
+      "upps": [
+        "5",
+        "7"
+      ],
+      "tipo": "texto"
     },
-    "a595cfc8-66c0-4691-9c15-63a65e2360bd": {
-      "titulo": "Mi paco pouso",
-      "autor": "1",
-      "upps": [],
-      "contenido": "ay mi pacooo",
-      "tipo": "texto",
-      "fechaSubida": "17/2/2023",
-      "fechaModificacion": "17/2/2023"
+    {
+      "id": "17",
+      "titulo": "Mi música",
+      "autor": "Autor 7",
+      "contenido": "Me encanta escuchar música, aquí comparto algunas de mis canciones favoritas",
+      "upps": [
+        "5",
+        "6"
+      ],
+      "tipo": "texto"
     },
-    "838804c2-b8bf-4208-ad8a-623997f9abcc": {
-      "titulo": "El titulito",
-      "autor": "1",
-      "upps": [],
-      "contenido": "Pacotron",
-      "tipo": "texto",
-      "fechaSubida": "18/2/2023",
-      "fechaModificacion": "18/2/2023"
+    {
+      "id": "18",
+      "titulo": "Mi libro favorito",
+      "autor": "Autor 8",
+      "contenido": "Mi libro favorito es 'El alquimista' de Paulo Coelho",
+      "upps": [
+        "8",
+        "11"
+      ],
+      "tipo": "texto"
     },
-    "65169cee-dafa-4829-b5de-0e62ac857683": {
-      "titulo": "El titulito",
-      "autor": "1",
-      "upps": [],
-      "contenido": "Pacotron",
-      "tipo": "texto",
-      "fechaSubida": "18/2/2023",
-      "fechaModificacion": "18/2/2023"
+    {
+      "id": "19",
+      "titulo": "Mi libro favorito",
+      "autor": "Autor 9",
+      "contenido": "Mi libro favorito es 'El alquimista' de Paulo Coelho",
+      "upps": [
+        "8",
+        "11"
+      ],
+      "tipo": "texto"
     },
-    "0f609fc9-2592-4819-ba3f-e05f93fc0b16": {
-      "titulo": "El titulito",
-      "autor": "1",
-      "upps": [],
-      "contenido": "Pacotron",
-      "tipo": "texto",
-      "fechaSubida": "18/2/2023",
-      "fechaModificacion": "18/2/2023"
+    {
+      "id": "20",
+      "titulo": "Mi libro favorito",
+      "autor": "Autor 10",
+      "contenido": "Mi libro favorito es 'El alquimista' de Paulo Coelho",
+      "upps": [
+        "8",
+        "11"
+      ],
+      "tipo": "texto"
     },
-    "3b97f33a-8d7d-42e0-8c2d-0eb278989a18": {
-      "titulo": "El titulito",
-      "autor": "1",
-      "upps": [],
-      "contenido": "Pacotron",
-      "tipo": "texto",
-      "fechaSubida": "18/2/2023",
-      "fechaModificacion": "18/2/2023"
+    {
+      "id": "21",
+      "titulo": "Mi película favorita",
+      "autor": "Autor 11",
+      "contenido": "Mi película favorita es 'Forrest Gump'",
+      "upps": [
+        "10",
+        "12"
+      ],
+      "tipo": "texto"
     },
-    "7de4f8cc-3890-4baf-af1e-8026bf02b2a0": {
-      "titulo": "El titulito",
+    {
+      "titulo": "La vida a veces",
       "autor": "1",
       "upps": [],
-      "contenido": "Pacotron",
+      "contenido": "Es facil, a veces dificil",
       "tipo": "texto",
-      "fechaSubida": "18/2/2023",
-      "fechaModificacion": "18/2/2023"
+      "id": "234a658a-3909-4443-a707-413d502a2754",
+      "fechaSubida": "19/2/2023",
+      "fechaModificacion": "19/2/2023"
     },
-    "a9e22812-7440-4eaa-aabf-43a5106b6cb2": {
-      "titulo": "El titulito",
+    {
+      "id": "bc020aaf-8ff7-4816-9ead-9f13d6e86616",
+      "titulo": "La vida a veces creces",
       "autor": "1",
       "upps": [],
-      "contenido": "Pacotron",
+      "contenido": "ILLOOOOOOOOOO",
       "tipo": "texto",
-      "fechaSubida": "18/2/2023",
-      "fechaModificacion": "18/2/2023"
+      "fechaSubida": "19/2/2023",
+      "fechaModificacion": "19/2/2023"
     },
-    "d9ac4df5-fea1-4d1b-bcba-d5102801502c": {
-      "titulo": "El titulito",
+    {
+      "id": "928393c5-5da6-4826-9e93-9a044b433ec0",
+      "titulo": "Paco JSON",
       "autor": "1",
       "upps": [],
-      "contenido": "Pacotron",
+      "contenido": "JSON paco",
       "tipo": "texto",
-      "fechaSubida": "18/2/2023",
-      "fechaModificacion": "18/2/2023"
+      "fechaSubida": "19/2/2023"
     },
-    "345d0ed3-8f9b-4c55-b8bb-581e9ea263fd": {
-      "titulo": "El titulito",
+    {
+      "id": "736b88ad-34d7-4d9d-a76a-979c16b42afa",
+      "titulo": "Lorem Ipsumitu",
       "autor": "1",
       "upps": [],
-      "contenido": "Pacotron",
+      "contenido": "Alejandro lee esto",
       "tipo": "texto",
-      "fechaSubida": "18/2/2023",
-      "fechaModificacion": "18/2/2023"
+      "fechaSubida": "19/2/2023",
+      "fechaModificacion": "19/2/2023"
+    },
+    {
+      "id": "8062bd69-a9bd-4f05-9184-aaa2111314e5",
+      "titulo": "Declaracion de guerra",
+      "autor": "1",
+      "upps": [],
+      "contenido": "Cibertron será de los decepticons",
+      "tipo": "texto",
+      "fechaSubida": "19/2/2023"
     }
-  }
+  ]
 }

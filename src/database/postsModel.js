@@ -12,21 +12,22 @@ const getTenPosts = (pages) => {
     let start = perPage * (pages - 1);
     let end = perPage * pages;
 
-    const allPosts = Object.entries(posts.posts).slice(start,end).map(entry => entry[1])
+    const allPosts = posts.posts.slice(start,end)
 
     return allPosts;
 
 }
 
 const getOnePost = (id) => {
-    const onePost = posts.posts[id]
+    const onePost = posts.posts.find(
+        post => id == post.id)
     return onePost
 }
 
-const insertOnePost = (id,newPost) => {
+const insertOnePost = (newPost) => {
 
     // Modificamos el objeto datos
-    posts.posts[id] = newPost;
+    posts.posts.push(newPost);
 
     // Escribimos los nuevos datos en el fichero JSON
     fs.writeFileSync(
@@ -38,38 +39,10 @@ const insertOnePost = (id,newPost) => {
     return newPost;
 }
 
-const deleteOnePost = (id) => {
-
-    // Vemos si existe el producto
-    const onePost = getOnePost(id);
-
-    if (!onePost) {
-
-        // Si no existe, devolvemos false
-        return false;
-
-    } else {
-
-        // Borramos el producto del objeto datos
-        delete posts.posts[id];
-
-        // Escribimos los nuevos datos en el fichero JSON
-        fs.writeFileSync(
-            "./src/database/posts.json",
-            JSON.stringify(posts, null, 2),
-            "utf8"
-        );
-
-        return onePost;
-
-    }
-
-};
-
 const updateOnePost = (id, nuevosDatos) => {
 
     // Comprobamos que exista la publicación
-    const onePost = getOnePost(id);
+    const onePost = posts.posts.findIndex(post => post.id === id)
 
     if (!onePost) {
 
@@ -79,7 +52,11 @@ const updateOnePost = (id, nuevosDatos) => {
     } else {
 
         // Cambiamos los datos
-        posts.posts[id] = nuevosDatos;
+        posts.posts[onePost] = nuevosDatos;
+
+        // Para devolver el resultado final creamos esta variable con los datos ya actualizados
+        const updatedPost = posts.posts[onePost]
+
 
         // Escribimos los nuevos datos en el fichero JSON
         fs.writeFileSync(
@@ -88,10 +65,38 @@ const updateOnePost = (id, nuevosDatos) => {
             "utf8"
         );
 
-        return onePost;
+        return updatedPost;
 
     }
 }
+
+const deleteOnePost = (id) => {
+
+    // Vemos si existe el producto
+    const postIndex = posts.posts.findIndex(post => post.id === id)
+
+    if (postIndex === -1) {
+
+        // Si no existe, devolvemos false
+        return false;
+
+    } else {
+
+        // Borramos el producto del objeto datos
+        const deletedPost = posts.posts.splice(postIndex, 1);
+
+        // Escribimos los nuevos datos en el fichero JSON
+        fs.writeFileSync(
+            "./src/database/posts.json",
+            JSON.stringify(posts, null, 2),
+            "utf8"
+        );
+
+        return deletedPost;
+
+    }
+
+};
 
 // Export de las funciones para poder utilizarlas luego
 module.exports = {

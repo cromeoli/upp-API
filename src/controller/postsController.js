@@ -132,39 +132,6 @@ const getOnePost = (req, res, next) => {
 
 };
 
-/*  DELETE ONE POST
-*
-*   //////////
-*   DELETE /api/v1/posts/:id
-*   //////////
-*
-*   Elimina la publicación con el id que se ha pasado por parámetro en la URL
-*
-*/
-
-const deleteOnePost = (req, res, next) => {
-
-    // Capturamos el Id de la publicación
-    const { id } = req.params;
-
-    // Llamamos al servicio para que se encargue de eliminar la publicación
-    const deletedPost = postsServices.deleteOnePost(id);
-
-    // Comprobamos si efectivamente se ha borrado
-    if (!deletedPost) {
-
-        res.status(404).send({mensaje: "La publicación no se ha eliminado correctamente - postsController"});
-
-    } else {
-
-        res.status(200).send({deletedPost,mensaje: "Publicación borrada"});
-
-    }
-
-    res.end();
-
-};
-
 /* UPDATE ONE POST
 *
 *   //////////////
@@ -212,6 +179,39 @@ const updateOnePost = (req, res, next) => {
     res.end();
 
 }
+
+/*  DELETE ONE POST
+*
+*   //////////
+*   DELETE /api/v1/posts/:id
+*   //////////
+*
+*   Elimina la publicación con el id que se ha pasado por parámetro en la URL
+*
+*/
+
+const deleteOnePost = (req, res, next) => {
+
+    // Capturamos el Id de la publicación
+    const { id } = req.params;
+
+    // Llamamos al servicio para que se encargue de eliminar la publicación
+    const deletedPost = postsServices.deleteOnePost(id);
+
+    // Comprobamos si efectivamente se ha borrado
+    if (!deletedPost) {
+
+        res.status(404).send({mensaje: "La publicación no se ha eliminado correctamente - postsController"});
+
+    } else {
+
+        res.status(200).send({deletedPost,mensaje: "Publicación borrada"});
+
+    }
+
+    res.end();
+
+};
 
 module.exports = {
     getTenPosts,

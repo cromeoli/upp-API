@@ -13,11 +13,11 @@ router.route("/:id")
     .put(usersController.updateOneUser)
     .delete(usersController.deleteOneUser);
 
-// localhost:3001/api/v1/users/user/:user
+// localhost:3001/api/v1/users/user/:user -> Para comprobar si ese username está en uso
 router.route("/user/:user")
     .get(usersController.getUsername)
 
-// localhost:3001/api/v1/users/email/:email
+// localhost:3001/api/v1/users/email/:email -> Para comprobar si ese email está en uso
 router.route("/email/:email")
     .get(usersController.getEmail)
 

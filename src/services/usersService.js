@@ -1,5 +1,6 @@
 const {v4: uuid} = require("uuid");
 const usersModel = require("../database/usersModel");
+const postModel = require("../database/postsModel");
 
 function getEmail(email) {
     return usersModel.getEmail(email);
@@ -35,7 +36,27 @@ function deleteUser(id) {
     return usersModel.deleteUser(id);
 }
 
+const updateUser = (id,newUserData) => {
 
+    // Obtiene los datos actuales del usuario
+    const postData = postModel.getOnePost(id);
+
+    // Recorro los campos comprobando si existen en los datos
+    for (let field in postData) {
+        if (newPostData.hasOwnProperty(field)) {
+
+            //Si existen, los actualizo
+            postData[field] = newPostData[field];
+        }
+    }
+
+    //Actualiza la fecha de modificación
+    postData.fechaModificacion = new Date().toLocaleDateString;
+
+    // Envía los datos al modelo para que éste actualice los datos
+    return postModel.updateOnePost(id, postData);
+
+};
 
 module.exports = {
     createUser,

@@ -19,6 +19,22 @@
       "passwd": "luo",
       "circles": [],
       "fechaRegistro": "18/2/2023"
+    },
+    {
+      "id": "f91267bd-978f-4c4c-9ce4-a766da72b8dc",
+      "username": "Pacotron",
+      "email": "treeLover@gmail.com",
+      "passwd": "arbol",
+      "circles": [],
+      "fechaRegistro": "19/2/2023"
+    },
+    {
+      "id": "d133f33c-44b6-4fed-a2f6-46fd7968be8c",
+      "username": "PacoJSON",
+      "email": "elpaquitoJSON@gmail.com",
+      "passwd": "arbol",
+      "circles": [],
+      "fechaRegistro": "19/2/2023"
     }
   ]
 }

@@ -74,6 +74,11 @@ const createOneUser = (req, res, next) => {
 *
 *   Devuelve el email de un usuario concreto.
 *
+*   Nota: He dividido los datos en username, email e ID porque no quería devolver
+*   en ningún caso la contraseña del usuario y porque además me beneficia en el frontend
+*   a la hora de realizar comprobaciones como por ejemplo dar una alerta en un formulario si
+*   un usuario existe.
+*
 */
 
 const getUsername = (req, res, next) => {
@@ -116,13 +121,14 @@ const getEmail = (req, res, next) => {
     const { email } = req.params;
 
     // Llamamos al servicio y le enviamos el usuario que hemos extraido de la URL
-    const username = usersServices.getEmail(email);
+    const userEmail = usersServices.getEmail(email);
+    console.log(userEmail)
 
     // Comprobamos que ese email existe,
-    if (email) {
+    if (userEmail) {
 
         // Si hay, lo envío
-        res.send(email);
+        res.send(userEmail);
 
     } else {
         //Si no, se devuelve un código HTTP 404 - File not found
@@ -184,17 +190,17 @@ const deleteOneUser = (req, res, next) => {
 const updateOneUser = (req, res, next) => {
 
     // Capturamos el Id del usuario
-    const { email } = req.params;
+    const { id } = req.params;
 
     // Capturamos los nuevos datos del cuerpo de la petición
     const { body } = req;
 
     // Llamamos al servicio para comprobar que el usuario que queremos actualizar existe
-    const exists = usersServices.getEmail(email);
+    const exists = usersServices.getEmail(id);
 
     if (exists) {
         // Si existe La actualizamos
-        const updatedPost = usersServices.updateUser(email, body);
+        const updatedPost = usersServices.updateUser(id, body);
 
         if (updatedPost) {
 
@@ -218,6 +224,8 @@ const updateOneUser = (req, res, next) => {
     res.end();
 
 }
+
+
 
 module.exports = {
     createOneUser,
