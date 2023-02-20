@@ -1,14 +1,15 @@
 const usersModel = require("../database/usersModel")
 
-function checkUser(userData){
-    console.log(userData);
-    return usersModel.findUserCredentials(userData);
+function checkUser(loginData){
+    console.log(`En el servicio...`);
+    return usersModel.findUserCredentials(loginData);
 }
 
-function findUserId(user){
-    return usersModel.findUserCredentials(user).id;
+function findUserId(loginData){
+    return usersModel.getUserId(loginData);
 }
 
 module.exports = {
-    checkUser
+    checkUser,
+    findUserId
 }

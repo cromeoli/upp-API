@@ -34,13 +34,27 @@ function getEmail(receivedEmail) {
     );
 }
 
-function findUserCredentials(receivedUserData){
-    console.log(receivedUserData)
+function getUserId(loginData){
 
-    return users.users.find(
+    //TODO Comprobar si la contraseña es correcta??
+
+    const userData = users.users.find(
+        user => loginData.email === user.email)
+
+    return userData.id
+}
+
+function findUserCredentials(receivedUserData){
+    console.log(`Comprobando credenciales...`);
+
+    const checkedUserdata = users.users.find(
         (dbUserdata) => dbUserdata.email === receivedUserData.email
-                     && dbUserdata.passwd === receivedUserData.passwd
+            && dbUserdata.passwd === receivedUserData.passwd
     );
+
+    console.log(`Comprobando credenciales... Este es el resultado: ${checkedUserdata}`);
+
+    return checkedUserdata
 }
 
 function updateUser(id, newData){
@@ -109,7 +123,8 @@ module.exports = {
     getEmail,
     findUserCredentials,
     getUser,
-    updateUser
+    updateUser,
+    getUserId
 };
 
 

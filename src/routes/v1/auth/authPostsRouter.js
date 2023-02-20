@@ -10,7 +10,6 @@ router.route("/")
 
 // localhost:3001/api/v1/posts/:id
 router.route("/:id")
-    .get(postsController.getOnePost)
     .put(postsController.updateOnePost)
     .delete(postsController.deleteOnePost);
 

@@ -6,7 +6,6 @@ const postsController = require("../../controller/postsController")
 
 router.route("/")
     .get(postsController.getTenPosts)
-    .post(postsController.createOnePost);
 
 
 // localhost:3001/api/v1/posts/pages/:pages
@@ -17,7 +16,5 @@ router.route("/pages/:pages")
 // localhost:3001/api/v1/posts/:id
 router.route("/:id")
     .get(postsController.getOnePost)
-    .put(postsController.updateOnePost)
-    .delete(postsController.deleteOnePost);
 
 module.exports.router = router;

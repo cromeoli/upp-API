@@ -59,12 +59,13 @@ const createOnePost = (req, res, next) => {
     // Cuerpo de la petición POST HTTP
     const { body } = req;
 
+
     // Comprobamos que los datos del cuerpo son correctos
-    if (!body.titulo || !body.autor || !body.contenido || !body.tipo)
+    if (!body.titulo || !body.contenido || !body.tipo)
 
         // El cuerpo de la petición no contiene los datos suficientes.
         // Entonces enviamos Código HTTP 400: Bad request
-        res.status(400).send({mensaje: "Una publicación debe componerse de: titulo, autor, contenido y tipo"});
+        res.status(400).send({mensaje: "Una publicación debe componerse de: titulo, contenido y tipo"});
 
     else {
 
@@ -72,7 +73,7 @@ const createOnePost = (req, res, next) => {
 
         const newPost = {
             "titulo":body.titulo,
-            "autor":"1",
+            "autor":req.userId,
             "upps":[],
             "contenido":body.contenido,
             "tipo":body.tipo

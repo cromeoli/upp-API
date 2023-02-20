@@ -4,13 +4,13 @@
       "id": "61dbae02-c147-4e28-863c-db7bd402b2d6",
       "name": "UserPrueba",
       "email": "prueba@prueba.com",
-      "password": "1234567890"
+      "passwd": "1234567890"
     },
     {
       "id": "61dbae02-c147-4e28-863c-db7bd402b2d7",
       "name": "Christian",
       "email": "christianReshulon6969@yahoo.es",
-      "password": "1234567890"
+      "passwd": "1234"
     },
     {
       "id": "ff7f1fca-142b-4b71-8165-1c4378aa1b71",
@@ -27,6 +27,22 @@
       "passwd": "arbol",
       "circles": [],
       "fechaRegistro": "19/2/2023"
+    },
+    {
+      "id": "05cfd9ae-022c-43d7-9153-da7da1d1219d",
+      "username": "JaneDoe",
+      "email": "usuarioPrueba",
+      "passwd": "ultrapassword",
+      "circles": [],
+      "fechaRegistro": "20/2/2023"
+    },
+    {
+      "id": "e55e6916-7273-44ad-9a34-426bb7fccd84",
+      "username": "ElJuly",
+      "email": "eljulio@gmail.com",
+      "passwd": "arbolito",
+      "circles": [],
+      "fechaRegistro": "20/2/2023"
     }
   ]
 }

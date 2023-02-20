@@ -39,15 +39,15 @@ const createOneUser = (req, res, next) => {
 
         // Creamos un objeto "post" para almacenarlo en la base de datos
 
-        const newUser = {
+        const newUserData = {
             "username":body.username,
             "email":body.email,
             "passwd":body.passwd,
             "circles":[],
         }
 
-        // Llamamos al servicio para que cree la publicación
-        usersServices.createUser(newUser);
+        // Llamamos al servicio para que cree el usuario
+        const newUser = usersServices.createUser(newUserData);
 
         if (newUser) {
 
@@ -225,6 +225,10 @@ const updateOneUser = (req, res, next) => {
 
 }
 
+function confirmLogin(req, res, next){
+    res.status(200).send({mensaje: "Logueado"}).end()
+}
+
 
 
 module.exports = {
@@ -232,5 +236,6 @@ module.exports = {
     getEmail,
     getUsername,
     updateOneUser,
-    deleteOneUser
+    deleteOneUser,
+    confirmLogin
 };

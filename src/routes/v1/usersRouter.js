@@ -2,16 +2,12 @@ const express = require("express");
 const router = express.Router();
 const usersController = require("../../controller/usersController")
 
-// http://localhost:3001/api/v1/posts/
+// http://localhost:3001/api/v1/users/
 
 router.route("/")
     //TODO GetAllUsers para asignar que usuarios están en un círculo
     .post(usersController.createOneUser);
 
-// localhost:3001/api/v1/users/:user
-router.route("/:id")
-    .put(usersController.updateOneUser)
-    .delete(usersController.deleteOneUser);
 
 // localhost:3001/api/v1/users/user/:user -> Para comprobar si ese username está en uso
 router.route("/user/:user")

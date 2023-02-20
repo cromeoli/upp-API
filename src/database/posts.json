@@ -258,6 +258,31 @@
       "contenido": "Cibertron será de los decepticons",
       "tipo": "texto",
       "fechaSubida": "19/2/2023"
+    },
+    {
+      "id": "f39306b2-b53f-4a72-8e8d-aa2b683ef5f4",
+      "titulo": "Mi publicación autenticada",
+      "autor": {
+        "id": "61dbae02-c147-4e28-863c-db7bd402b2d7",
+        "name": "Christian",
+        "email": "christianReshulon6969@yahoo.es",
+        "passwd": "1234"
+      },
+      "upps": [],
+      "contenido": "Funciona por favor",
+      "tipo": "texto",
+      "fechaSubida": "20/2/2023",
+      "fechaModificacion": "20/2/2023"
+    },
+    {
+      "id": "8a0e24b0-5937-4d2a-8927-f64730e625e4",
+      "titulo": "Mi publicación autenticada",
+      "autor": "61dbae02-c147-4e28-863c-db7bd402b2d7",
+      "upps": [],
+      "contenido": "Funciona por favor",
+      "tipo": "texto",
+      "fechaSubida": "20/2/2023",
+      "fechaModificacion": "20/2/2023"
     }
   ]
 }
