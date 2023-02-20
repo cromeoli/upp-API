@@ -40,7 +40,7 @@ function authManager(req, res, next){
                     }
 
                     req.userId = authService.findUserId(user)
-                    next()
+                    next();
                     // El usuario está autenticado y se puede continuar con la solicitud
                 });
             }
