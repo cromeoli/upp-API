@@ -15,8 +15,7 @@ Para importarlo y no tener problemas lo hice así:
 1.![tuto1](https://user-images.githubusercontent.com/92324278/219983482-8faec9b5-6cf7-4c7f-bffd-912169d0023f.gif)
 2.![tuto2](https://user-images.githubusercontent.com/92324278/219983485-6bf80dc8-1f6a-49b9-8c0d-5d30c398086b.gif)
 
-
-La API de Upp tiene los siguientes endpoints definidos:
+La API de Upp tiene los siguientes endpoints públicos (No requieren un token de autorizaci definidos:
 
 ### Posts (Publicaciones)
 
@@ -25,31 +24,29 @@ La API de Upp tiene los siguientes endpoints definidos:
 | Obtener un post concreto por su ID | /api/v1/posts/:id | GET    |
 | Obtener los 10 primeros posts      | /api/v1/posts              | GET    |
 | Obtener 10 posts de la página "x"  | /api/v1/posts/pages/:x     | GET    |
-| Eliminar un post                   | /api/v1/posts/:id | DELETE |
-| Modificar un post                  | /api/v1/posts/:id | PUT    |
-| Crear un post                      | /api/v1/posts              | POST   |
 
 ### Usuarios
 
 | Descripción                                   | Endpoints                  | Método |
 | --------------------------------------------- | -------------------------- | ------ |
 | Registrar un usuario                          | /api/v1/users              | POST   |
-| Modificar un usuario                          | /api/v1/users/:id          | PUT    |
-| Eliminar un usuario                           | /api/v1/users/:id          | DELETE    |
 | Comprobar si el email de un usuario existe    | /api/v1/users/email/:email | GET |
 | Comprobar si el nickname de un usuario existe | /api/v1/users/user/:username | GET    |
 
----
 
-### Extra
+### Rutas con autorización
 
-#### Rutas con autorización
-La api tiene implementado un sistema de autenticación que utiliza JSON Web token, pero en las últimas pruebas algo iba mal y no me ha dado tiempo a arreglarlo. La idea original era que un usuario debía loguearse y obtener un JWT para acceder a las siguientes rutas:
+La api tiene implementado un sistema de autenticación que utiliza JSON Web token, por lo que para acceder a ciertos endpoints 
+necesitas hacer una petición de login para recibir un token válido con el que realizar todas las demás. 
+Si no tienes token, se recibe un error 401 (Not autorized). 
+
+Los endpoints son los siguientes:
 
 #### Usuario
 
 | Descripción                                   | Endpoints                  | Método |
 | --------------------------------------------- | -------------------------- | ------ |
+| Hacer Login                                   | /api/v1/auth/users | POST |
 | Modificar un usuario                          | /api/v1/auth/users/:id          | PUT    |
 | Eliminar un usuario                           | /api/v1/auth/users/:id          | DELETE    |
 
