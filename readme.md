@@ -8,7 +8,7 @@ Upp es una red social basada en el contenido, para ello podrás unirte a círcul
 
 ## Endpoints
 
-Nota: Para probar los endpoints he añadido el archivo "endpointTests.json" para Insomnia que puede importarse y contiene las rutas ya definidas con las que he ido haciendo pruebas.
+Nota: Para probar los endpoints he añadido el archivo "testRequests.json" para Insomnia que puede importarse y contiene las rutas ya definidas con las que he ido haciendo pruebas.
 
 Para importarlo y no tener problemas lo hice así:
 
