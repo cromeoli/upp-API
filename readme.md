@@ -8,14 +8,14 @@ Upp es una red social basada en el contenido, para ello podrás unirte a círcul
 
 ## Setup
 
+```bash
+git clone https://github.com/cromeoli/upp-API
 ```
-bash git clone https://github.com/cromeoli/upp-API
+```bash 
+npm install
 ```
-```
-bash npm install
-```
-```
-bash npm start
+```bash 
+npm start
 ```
 
 ## Endpoints
