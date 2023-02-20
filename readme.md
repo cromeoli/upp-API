@@ -15,7 +15,7 @@ Para importarlo y no tener problemas lo hice así:
 1.![tuto1](https://user-images.githubusercontent.com/92324278/219983482-8faec9b5-6cf7-4c7f-bffd-912169d0023f.gif)
 2.![tuto2](https://user-images.githubusercontent.com/92324278/219983485-6bf80dc8-1f6a-49b9-8c0d-5d30c398086b.gif)
 
-La API de Upp tiene los siguientes endpoints públicos (No requieren un token de autorizaci definidos:
+La API de Upp tiene los siguientes endpoints públicos (No requieren un token de autorización) definidos:
 
 ### Posts (Publicaciones)
 
