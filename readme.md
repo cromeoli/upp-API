@@ -6,6 +6,18 @@ Upp es una red social basada en el contenido, para ello podrás unirte a círcul
 
 ---
 
+## Setup
+
+```
+bash git clone https://github.com/cromeoli/upp-API
+```
+```
+bash npm install
+```
+```
+bash npm start
+```
+
 ## Endpoints
 
 Nota: Para probar los endpoints he añadido el archivo "testRequests.json" para Insomnia que puede importarse y contiene las rutas ya definidas con las que he ido haciendo pruebas.
