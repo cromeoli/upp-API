@@ -1,5 +1,6 @@
 const users = require("./users.json");
 const fs = require("fs");
+const bcrypt = require('bcryptjs');
 
 function insertUser(newUser) {
 
@@ -14,6 +15,12 @@ function insertUser(newUser) {
     );
 
     return newUser;
+}
+
+function getAuthorUsername(id){
+    const userData = users.users.find(
+        user => id === user.id)
+    return userData.username
 }
 
 function getUser(id){
@@ -47,14 +54,15 @@ function getUserId(loginData){
 function findUserCredentials(receivedUserData){
     console.log(`Comprobando credenciales...`);
 
-    const checkedUserdata = users.users.find(
-        (dbUserdata) => dbUserdata.email === receivedUserData.email
-            && dbUserdata.passwd === receivedUserData.passwd
-    );
+    const checkedUserdata = users.users.find((dbUserdata) => dbUserdata.email === receivedUserData.email);
 
-    console.log(`Comprobando credenciales... Este es el resultado: ${checkedUserdata}`);
+    if (checkedUserdata && bcrypt.compareSync(receivedUserData.passwd, checkedUserdata.passwd)) {
+        console.log(`Comprobando credenciales... Este es el resultado: ${checkedUserdata}`);
+        return checkedUserdata;
+    }
 
-    return checkedUserdata
+    console.log(`Credenciales no válidas.`);
+    return null;
 }
 
 function updateUser(id, newData){
@@ -124,7 +132,8 @@ module.exports = {
     findUserCredentials,
     getUser,
     updateUser,
-    getUserId
+    getUserId,
+    getAuthorUsername
 };
 
 

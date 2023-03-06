@@ -3,8 +3,8 @@
     {
       "id": "2",
       "titulo": "Mi día de hoy",
-      "autor": "Autor 2",
-      "contenido": "Hoy fue un día agotador, pero productivo",
+      "autor": "Pacoprimero1",
+      "contenido": "Hoy fue un día agotador, pero productivo.",
       "upps": [
         "1",
         "3"
@@ -14,7 +14,7 @@
     {
       "id": "3",
       "titulo": "Mis viajes",
-      "autor": "Autor 3",
+      "autor": "Slykyie",
       "contenido": "He visitado muchos lugares interesantes en mi vida, aquí comparto algunos",
       "upps": [
         "1",
@@ -25,9 +25,9 @@
     },
     {
       "id": "4",
-      "titulo": "Mi mascota",
-      "autor": "Autor 4",
-      "contenido": "Tengo un perro llamado Max, es muy amigable y le encanta jugar",
+      "titulo": "Escuchenme bien",
+      "autor": "Junipero23",
+      "contenido": "Usás touchpad? Voy a por ti maldita sea",
       "upps": [
         "1",
         "3"
@@ -37,7 +37,7 @@
     {
       "id": "6",
       "titulo": "Mi jardín",
-      "autor": "Autor 6",
+      "autor": "EleanorRigby",
       "contenido": "Tengo un jardín muy bonito, lleno de flores y árboles frutales",
       "upps": [
         "5",
@@ -48,7 +48,7 @@
     {
       "id": "7",
       "titulo": "Mi música",
-      "autor": "Autor 7",
+      "autor": "JohnRomero",
       "contenido": "Me encanta escuchar música, aquí comparto algunas de mis canciones favoritas",
       "upps": [
         "5",
@@ -59,7 +59,7 @@
     {
       "id": "8",
       "titulo": "Mi libro favorito",
-      "autor": "Autor 8",
+      "autor": "PacoPouso",
       "contenido": "Mi libro favorito es 'El alquimista' de Paulo Coelho",
       "upps": [
         "8",
@@ -70,7 +70,7 @@
     {
       "id": "9",
       "titulo": "Mi libro favorito",
-      "autor": "Autor 9",
+      "autor": "Flopy",
       "contenido": "Mi libro favorito es 'El alquimista' de Paulo Coelho",
       "upps": [
         "8",
@@ -81,7 +81,7 @@
     {
       "id": "10",
       "titulo": "Mi libro favorito",
-      "autor": "Autor 10",
+      "autor": "Elenito",
       "contenido": "Mi libro favorito es 'El alquimista' de Paulo Coelho",
       "upps": [
         "8",
@@ -92,7 +92,7 @@
     {
       "id": "11",
       "titulo": "Mi película favorita",
-      "autor": "Autor 11",
+      "autor": "Autor 9",
       "contenido": "Mi película favorita es 'Forrest Gump'",
       "upps": [
         "10",
@@ -103,7 +103,7 @@
     {
       "id": "12",
       "titulo": "Mi día de hoy",
-      "autor": "Autor 2",
+      "autor": "Autor 10",
       "contenido": "Hoy fue un día agotador, pero productivo",
       "upps": [
         "1",
@@ -114,7 +114,7 @@
     {
       "id": "13",
       "titulo": "Mis viajes",
-      "autor": "Autor 3",
+      "autor": "Autor 11",
       "contenido": "He visitado muchos lugares interesantes en mi vida, aquí comparto algunos",
       "upps": [
         "1",
@@ -126,7 +126,7 @@
     {
       "id": "14",
       "titulo": "Mi mascota",
-      "autor": "Autor 4",
+      "autor": "Autor 12",
       "contenido": "Tengo un perro llamado Max, es muy amigable y le encanta jugar",
       "upps": [
         "1",
@@ -137,7 +137,7 @@
     {
       "id": "15",
       "titulo": "Mi cocina",
-      "autor": "Autor 5",
+      "autor": "Autor 13",
       "contenido": "Me encanta cocinar, aquí comparto algunas de mis recetas favoritas",
       "upps": [
         "6",
@@ -148,7 +148,7 @@
     {
       "id": "16",
       "titulo": "Mi jardín",
-      "autor": "Autor 6",
+      "autor": "Autor 14",
       "contenido": "Tengo un jardín muy bonito, lleno de flores y árboles frutales",
       "upps": [
         "5",
@@ -159,7 +159,7 @@
     {
       "id": "17",
       "titulo": "Mi música",
-      "autor": "Autor 7",
+      "autor": "Autor 15",
       "contenido": "Me encanta escuchar música, aquí comparto algunas de mis canciones favoritas",
       "upps": [
         "5",
@@ -170,7 +170,7 @@
     {
       "id": "18",
       "titulo": "Mi libro favorito",
-      "autor": "Autor 8",
+      "autor": "Autor 16",
       "contenido": "Mi libro favorito es 'El alquimista' de Paulo Coelho",
       "upps": [
         "8",
@@ -181,7 +181,7 @@
     {
       "id": "19",
       "titulo": "Mi libro favorito",
-      "autor": "Autor 9",
+      "autor": "Autor 17",
       "contenido": "Mi libro favorito es 'El alquimista' de Paulo Coelho",
       "upps": [
         "8",
@@ -192,7 +192,7 @@
     {
       "id": "20",
       "titulo": "Mi libro favorito",
-      "autor": "Autor 10",
+      "autor": "Autor 18",
       "contenido": "Mi libro favorito es 'El alquimista' de Paulo Coelho",
       "upps": [
         "8",
@@ -201,88 +201,64 @@
       "tipo": "texto"
     },
     {
-      "id": "21",
-      "titulo": "Mi película favorita",
-      "autor": "Autor 11",
-      "contenido": "Mi película favorita es 'Forrest Gump'",
-      "upps": [
-        "10",
-        "12"
-      ],
-      "tipo": "texto"
-    },
-    {
-      "titulo": "La vida a veces",
-      "autor": "1",
-      "upps": [],
-      "contenido": "Es facil, a veces dificil",
-      "tipo": "texto",
-      "id": "234a658a-3909-4443-a707-413d502a2754",
-      "fechaSubida": "19/2/2023",
-      "fechaModificacion": "19/2/2023"
-    },
-    {
-      "id": "bc020aaf-8ff7-4816-9ead-9f13d6e86616",
-      "titulo": "La vida a veces creces",
-      "autor": "1",
-      "upps": [],
-      "contenido": "ILLOOOOOOOOOO",
-      "tipo": "texto",
-      "fechaSubida": "19/2/2023",
-      "fechaModificacion": "19/2/2023"
-    },
-    {
-      "id": "928393c5-5da6-4826-9e93-9a044b433ec0",
-      "titulo": "Paco JSON",
-      "autor": "1",
-      "upps": [],
-      "contenido": "JSON paco",
-      "tipo": "texto",
-      "fechaSubida": "19/2/2023"
-    },
-    {
-      "id": "736b88ad-34d7-4d9d-a76a-979c16b42afa",
-      "titulo": "Lorem Ipsumitu",
-      "autor": "1",
-      "upps": [],
-      "contenido": "Alejandro lee esto",
-      "tipo": "texto",
-      "fechaSubida": "19/2/2023",
-      "fechaModificacion": "19/2/2023"
-    },
-    {
-      "id": "8062bd69-a9bd-4f05-9184-aaa2111314e5",
-      "titulo": "Declaracion de guerra",
-      "autor": "1",
-      "upps": [],
-      "contenido": "Cibertron será de los decepticons",
-      "tipo": "texto",
-      "fechaSubida": "19/2/2023"
-    },
-    {
-      "id": "f39306b2-b53f-4a72-8e8d-aa2b683ef5f4",
-      "titulo": "Mi publicación autenticada",
-      "autor": {
-        "id": "61dbae02-c147-4e28-863c-db7bd402b2d7",
-        "name": "Christian",
-        "email": "christianReshulon6969@yahoo.es",
-        "passwd": "1234"
-      },
-      "upps": [],
-      "contenido": "Funciona por favor",
-      "tipo": "texto",
-      "fechaSubida": "20/2/2023",
-      "fechaModificacion": "20/2/2023"
-    },
-    {
-      "id": "8a0e24b0-5937-4d2a-8927-f64730e625e4",
+      "id": "389d7ee6-d726-431e-a98e-48ec29318279",
       "titulo": "Mi publicación autenticada",
       "autor": "61dbae02-c147-4e28-863c-db7bd402b2d7",
       "upps": [],
-      "contenido": "Funciona por favor",
+      "contenido": "Funciona por favor vamos hostia",
       "tipo": "texto",
-      "fechaSubida": "20/2/2023",
-      "fechaModificacion": "20/2/2023"
+      "fechaSubida": "22/2/2023",
+      "fechaModificacion": "22/2/2023"
+    },
+    {
+      "id": "16774014-8157-4565-8052-abf3dc01e9ff",
+      "titulo": "Mi publicación autenticada",
+      "autor": "ff7f1fca-142b-4b71-8165-1c4378aa1b71",
+      "upps": [],
+      "contenido": "Prueba post logueo",
+      "tipo": "texto",
+      "fechaSubida": "6/3/2023",
+      "fechaModificacion": "6/3/2023"
+    },
+    {
+      "id": "372aca31-d937-462c-9895-6c0c0a0ebd73",
+      "titulo": "Mi publicación autenticada",
+      "autor": false,
+      "upps": [],
+      "contenido": "Prueba post logueo segundaa",
+      "tipo": "texto",
+      "fechaSubida": "6/3/2023",
+      "fechaModificacion": "6/3/2023"
+    },
+    {
+      "id": "193a7090-8a7e-4803-933c-4f3eb0148b91",
+      "titulo": "Mi publicación autenticada",
+      "autor": false,
+      "upps": [],
+      "contenido": "Prueba post logueo tercera",
+      "tipo": "texto",
+      "fechaSubida": "6/3/2023",
+      "fechaModificacion": "6/3/2023"
+    },
+    {
+      "id": "65fd097d-025e-4e82-8955-3554b42a095d",
+      "titulo": "Mi publicación autenticada",
+      "autor": false,
+      "upps": [],
+      "contenido": "Prueba post logueo tercera",
+      "tipo": "texto",
+      "fechaSubida": "6/3/2023",
+      "fechaModificacion": "6/3/2023"
+    },
+    {
+      "id": "336ef505-ec79-47d3-bfde-686d07ffd217",
+      "titulo": "Mi publicación autenticada",
+      "autor": "paco",
+      "upps": [],
+      "contenido": "Prueba post logueo cuarta",
+      "tipo": "texto",
+      "fechaSubida": "6/3/2023",
+      "fechaModificacion": "6/3/2023"
     }
   ]
 }

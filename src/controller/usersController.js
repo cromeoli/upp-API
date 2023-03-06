@@ -51,7 +51,7 @@ const createOneUser = (req, res, next) => {
 
         if (newUser) {
 
-            res.status(200).send({newPost: newUser, mensaje: `Se ha añadido el usuario ${body.username}`});
+            res.status(200).send({newUser: newUser, mensaje: `Se ha añadido el usuario ${body.username}`});
 
         } else {
 
@@ -96,8 +96,8 @@ const getUsername = (req, res, next) => {
         res.send(username);
 
     } else {
-        //Si no, se devuelve un código HTTP 404 - File not found
-        res.status(404).send({ respuesta: false, mensaje: "Ese usuario no existe - usersController" });
+        //Si no, se devuelve un código HTTP 200 porque ha hecho una comprobación, pero devuelve falso
+        res.status(200).send(false);
 
     }
 
@@ -131,8 +131,8 @@ const getEmail = (req, res, next) => {
         res.send(userEmail);
 
     } else {
-        //Si no, se devuelve un código HTTP 404 - File not found
-        res.status(404).send({ respuesta: false, mensaje: "Ese email no existe - usersController" });
+        //Si no, se devuelve un código HTTP 200, por el mismo motivo que el username
+        res.status(200).send(false);
 
     }
 

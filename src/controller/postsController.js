@@ -34,9 +34,9 @@ const getTenPosts = (req, res, next) => {
 
     } else {
 
-    //Si no se encuentran publicaciones, devolvemos código de error 404 (recurso no encontrado).
+    //Si no se encuentran publicaciones, devolvemos un array vacío
 
-        res.status(404).send({mensaje: "No existen publicaciones"});
+        res.send([]);
 
     }
 
@@ -73,7 +73,7 @@ const createOnePost = (req, res, next) => {
 
         const newPost = {
             "titulo":body.titulo,
-            "autor":req.userId,
+            "autor":req.usernamem,
             "upps":[],
             "contenido":body.contenido,
             "tipo":body.tipo

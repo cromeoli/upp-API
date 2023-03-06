@@ -13,8 +13,9 @@ function authManager(req, res, next){
     if(userData){
         console.log("Entro en userdata")
         const userIsVerified = login(userData)
-        console.log(userIsVerified)
         console.log(`Resultado de login(userdata): ${login(userData)}`)
+        console.log("Datos usuario:")
+        console.log(userIsVerified)
 
         if(!!userIsVerified){
             console.log("El usuario existe, le damos un token")
@@ -24,7 +25,9 @@ function authManager(req, res, next){
             // Establecer una cookie con el token JWT
             return res.cookie('auth', token, { httpOnly: true, maxAge: 259200000 })
                     .status(200)
-                    .send({mensaje:"Logueado con éxito", id:userIsVerified.id})
+                    .send({mensaje:"Logueado con éxito",
+                            id:userIsVerified.id,
+                            username: userIsVerified.username})
 
         }else{
             console.log("No se han encontrado datos de usuario o no son válidos, comprobamos a ver si hay token")
@@ -39,7 +42,13 @@ function authManager(req, res, next){
                         return false; // El token no es válido
                     }
 
-                    req.userId = authService.findUserId(user)
+                    let userId = authService.findUserId(user)
+
+                    req.userId = userId
+
+                    console.log(userId)
+                    console.log(authService.findUsername(userId))
+                    req.username = authService.findUsername(userId)
                     next();
                     // El usuario está autenticado y se puede continuar con la solicitud
                 });

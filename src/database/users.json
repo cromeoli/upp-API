@@ -43,6 +43,118 @@
       "passwd": "arbolito",
       "circles": [],
       "fechaRegistro": "20/2/2023"
+    },
+    {
+      "id": "c1c81282-87d1-4523-87d2-28b719b4bd19",
+      "username": "paquitoElTito",
+      "email": "arbolito23@gmail.com",
+      "passwd": "arbol",
+      "circles": [],
+      "fechaRegistro": "21/2/2023"
+    },
+    {
+      "id": "e41e033b-2f0c-4fb0-8b5a-8d7ab5ea59ea",
+      "username": "Lorem Ipsum",
+      "email": "pacowoody@gmail.com",
+      "passwd": "Arbolito6",
+      "circles": [],
+      "fechaRegistro": "6/3/2023"
+    },
+    {
+      "id": "27941a49-c984-423f-b92c-61515b244fa1",
+      "username": "Lorem Ipsumito",
+      "email": "pacoFlow@gmail.com",
+      "passwd": "Arbolito67",
+      "circles": [],
+      "fechaRegistro": "6/3/2023"
+    },
+    {
+      "id": "d57c32cd-6f20-4d48-a0de-d41ec1ddde66",
+      "username": "Lorem Ipsumito",
+      "email": "pacoFlow@gmail.com",
+      "passwd": "Arbolito67",
+      "circles": [],
+      "fechaRegistro": "6/3/2023"
+    },
+    {
+      "id": "76e95e3e-3006-4c52-ba30-acf5326d1412",
+      "username": "Lageado",
+      "email": "juliopardo29@gmail.com",
+      "passwd": "Babeta18$",
+      "circles": [],
+      "fechaRegistro": "6/3/2023"
+    },
+    {
+      "id": "1a5a62b3-743c-4c00-b62d-7f9fa566e03e",
+      "username": "Elbabeta",
+      "email": "elbabeta19@gmail.com",
+      "passwd": "Babucha92$",
+      "circles": [],
+      "fechaRegistro": "6/3/2023"
+    },
+    {
+      "id": "004e4e5a-d216-4967-8172-c247100ea753",
+      "username": "julioPardo29",
+      "email": "julitoPard10@hotmail.com",
+      "passwd": "sisisiSI19%",
+      "circles": [],
+      "fechaRegistro": "6/3/2023"
+    },
+    {
+      "id": "1fe7fcd8-9356-4c80-ada9-2b2d07d25ea6",
+      "username": "kanito",
+      "email": "kAnorro9@yahoo.es",
+      "passwd": "Arbolito6%",
+      "circles": [],
+      "fechaRegistro": "6/3/2023"
+    },
+    {
+      "id": "51ccbbfa-f228-40bb-9d74-841d9289dc60",
+      "username": "Pisluis",
+      "email": "pisluiso@gmail.com",
+      "passwd": "Kibitoshin97@",
+      "circles": [],
+      "fechaRegistro": "6/3/2023"
+    },
+    {
+      "id": "27478c96-fba1-485e-b20b-8e9e32b209a5",
+      "username": "pacomenuo",
+      "email": "lilito@gmail.com",
+      "passwd": "Arbolito5$",
+      "circles": [],
+      "fechaRegistro": "6/3/2023"
+    },
+    {
+      "id": "323e8d5c-45bd-4010-8ac1-5d8ebd638c5d",
+      "username": "huasd",
+      "email": "crisrom4@gmail.com",
+      "passwd": "Arbolito23&",
+      "circles": [],
+      "fechaRegistro": "6/3/2023"
+    },
+    {
+      "id": "754649fe-81fc-47da-bd84-bbe59d9e992b",
+      "username": "luo",
+      "email": "luo@gmail.com",
+      "passwd": "$2a$05$UvZDvKlVfcxCiJonkU9O2uNSeb52UDULbBcX5GAKW5zFnKEM7B22G",
+      "circles": [],
+      "fechaRegistro": "6/3/2023"
+    },
+    {
+      "id": "7beb8418-49e4-4bcd-977e-a634705f91ba",
+      "username": "pisluo",
+      "email": "pisluo@gmail.com",
+      "passwd": "$2a$05$.AH9f4FpnriiX46S27E5X.VxaGRs45wetCGdByt8G4yzSallZf.5a",
+      "circles": [],
+      "fechaRegistro": "6/3/2023"
+    },
+    {
+      "id": "6c9375b6-cba3-4b20-a9ec-a37fcce9ae56",
+      "username": "pacomon",
+      "email": "pacotron@gmail.com",
+      "passwd": "$2a$05$mfhl95gfAA/OK220uFeuI.bDDF.STfeWZwGuQ4Xk0aB6Hd8ToDF6i",
+      "circles": [],
+      "fechaRegistro": "6/3/2023"
     }
   ]
 }
